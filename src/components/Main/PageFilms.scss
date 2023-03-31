@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.pagin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+
+  margin: 30px auto;
+}
