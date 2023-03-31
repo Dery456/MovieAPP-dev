@@ -13,6 +13,7 @@ import About from "./components/Routing/About";
 import AboutFilm from "./components/Routing/AboutFilm";
 import Films from "./components/Routing/Films";
 import NotFound from "./components/Routing/NotFound";
+import TestFilter from "./components/TestFilter";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="films" element={<Films />} />
             <Route path="films/:kinopoiskId" element={<AboutFilm />} />
+            <Route path="testFilter" element={<TestFilter />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
