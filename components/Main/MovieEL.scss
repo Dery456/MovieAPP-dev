@@ -1,0 +1,60 @@
+@import "./../../data/var.scss";
+
+.cardFilms {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+}
+
+.heroFilm {
+  font-size: 18px;
+}
+
+.filmName {
+  display: hidden;
+
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 18px;
+}
+
+.poster {
+  width: 200px;
+  height: 290px;
+}
+
+.overWolf {
+  @extend %mainTextC;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  z-index: 2;
+}
+
+.posterHover {
+  position: relative;
+  cursor: pointer;
+  transition: background-color, transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    .overWolf {
+      display: flex;
+    }
+  }
+}
