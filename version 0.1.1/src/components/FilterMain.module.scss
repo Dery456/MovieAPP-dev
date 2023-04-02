@@ -1,0 +1,94 @@
+.Filter {
+  position: absolute;
+  top: 600px;
+  left: -100px;
+
+  z-index: 10;
+
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+
+  max-height: 110vh;
+
+  background-color: gray;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.dropDown {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+
+  max-height: 50%;
+  overflow-y: scroll;
+
+  column-gap: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 20px;
+  z-index: 10;
+
+  background-color: rgb(3, 93, 247);
+  border-radius: 20px;
+
+  & p {
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+}
+
+.wrapperCountry {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contentHidden {
+  background-color: wheat;
+}
+
+.search {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.country {
+  background-color: wheat;
+  color: black;
+  padding: 0px 15px;
+
+  border-radius: 50px;
+}
+
+.filterDrop {
+  position: relative;
+}
+
+.heroDrop {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropMenu {
+  position: absolute;
+  background-color: wheat;
+  z-index: 11;
+
+  border-radius: 20px;
+
+  padding: 10px 20px;
+}
+
+.itemDrop {
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}

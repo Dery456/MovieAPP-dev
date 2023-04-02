@@ -1,0 +1,30 @@
+@import "./../../data/var.scss";
+.button-gray,
+.button {
+  text-decoration: none;
+  color: black;
+
+  padding: 5px 20px;
+  margin: 5px;
+
+  background-color: $buttonC;
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 25px;
+
+  transition: background-color, color, transform 0.2s ease;
+
+  &:hover {
+    background-color: rgba($color: $buttonC, $alpha: 0.5);
+    color: black;
+    transform: scale(1.09);
+  }
+}
+
+.button-gray {
+  background-color: darkgray;
+  &:hover {
+    background-color: rgba($color: darkgray, $alpha: 0.5);
+  }
+}
