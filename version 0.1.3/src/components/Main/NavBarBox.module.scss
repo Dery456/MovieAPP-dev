@@ -1,0 +1,40 @@
+@import "./../../data/varsGlobal/var.scss";
+
+.navBar {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  background-color: $background-nigth-strong;
+
+  &__link {
+    display: flex;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 30px;
+
+    & li {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 30px;
+    }
+
+    &Item {
+      font-size: 15px;
+      color: $color-main-text;
+      text-decoration: none;
+
+      transition: border-bottom 0.2s ease;
+
+      &:hover {
+        color: $color-main-text;
+        border-bottom: 5px solid $button-activective;
+      }
+    }
+  }
+}

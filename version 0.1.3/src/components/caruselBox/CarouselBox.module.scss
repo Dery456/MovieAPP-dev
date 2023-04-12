@@ -1,0 +1,13 @@
+@import "./../../data/varsGlobal/var.scss";
+
+.carousel {
+  width: 110vh;
+  margin: 20px auto 40px auto;
+}
+
+@include laptop {
+  .carousel {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
