@@ -1,0 +1,15 @@
+@import "./../../../data/varsGlobal/var.scss";
+
+.home {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  &__premier {
+  }
+
+  &__heroContent {
+    margin-bottom: 20px;
+  }
+}
