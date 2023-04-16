@@ -1,0 +1,18 @@
+.windowRating {
+  color: black;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.windowYears {
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 20vh;
+  overflow-y: scroll;
+}
+
+.FilterFromBefore {
+  text-align: center;
+}
