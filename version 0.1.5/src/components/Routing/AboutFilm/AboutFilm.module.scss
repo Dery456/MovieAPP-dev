@@ -1,0 +1,192 @@
+@import "./../../../data/varsGlobal/var.scss";
+
+.pageFilm {
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-flow: column wrap;
+
+    width: 100%;
+    margin: 0 auto;
+    & img {
+      width: 30%;
+    }
+    & p {
+      max-width: 250px;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  &__poster {
+    width: 100%;
+  }
+
+  &__posterItem {
+    width: 480px;
+    height: 720px;
+  }
+
+  &__relatedVideos {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__noResult {
+    text-align: center;
+  }
+
+  &__desription {
+    margin: 40px auto;
+  }
+
+  &__wraper-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    color: $color-main-text;
+    margin-top: 10px;
+    width: 250px;
+  }
+}
+
+.pageFilm__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pageFilm__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  min-width: 300px;
+  min-height: 300px;
+
+  text-align: center;
+
+  & h2 {
+    @extend %heroTextC;
+    max-width: 400px;
+  }
+
+  & p {
+    @extend %mainTextC;
+    color: $color-main-text;
+  }
+
+  & a {
+    text-decoration: none;
+
+    color: $color-main-text;
+    font-size: 18px;
+  }
+  &Genere {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+
+    & p {
+      border: 1px solid whitesmoke;
+      padding: 0 10px;
+      border-radius: 20px;
+    }
+  }
+
+  &Rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &DescShort {
+    max-width: 300px;
+  }
+}
+
+@include desktop {
+}
+@include laptop {
+}
+@include tablet {
+  .pageFilm {
+    &__relatedVideos {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &__header {
+      display: none;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__poster {
+      &Item {
+      }
+    }
+    &__button {
+      width: 190px;
+    }
+    &__buttonsBox {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      column-gap: 10px;
+    }
+  }
+
+  .pageFilm__info {
+    &Genere {
+      max-width: 100%;
+    }
+  }
+}
+@include mobile {
+  .pageFilm {
+    width: 100%;
+    margin: 0 auto;
+    &__header {
+      display: none;
+    }
+    &__poster {
+      width: 100%;
+      border-radius: 20px;
+      &Item {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 50px 50px;
+      }
+    }
+    &__button {
+      width: 150px;
+    }
+    &__desription {
+      margin: 20px auto;
+      padding: 20px;
+    }
+    &__wraperInfo {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+@include mini-mobile {
+}

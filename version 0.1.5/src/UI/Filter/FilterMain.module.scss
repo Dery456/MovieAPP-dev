@@ -1,0 +1,209 @@
+@import "./../../data/varsGlobal/var.scss";
+
+.ligthText {
+  @extend %minTextC;
+}
+
+.wrapperFilter {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  min-width: 260px;
+  height: 100vh;
+  z-index: 105;
+
+  background-color: $background-nigth-strong;
+
+  animation: show-filter 0.5s forwards;
+
+  //transition: left 0.5s ease;
+}
+
+@keyframes show-filter {
+  0% {
+    left: -300px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.Filter {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+
+  min-height: 600px;
+  padding: 25px;
+
+  border-radius: 0 20px 20px 0;
+
+  color: $color-main-text;
+  text-align: center;
+}
+
+.dropDown {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+
+  max-height: 50%;
+  overflow-y: scroll;
+
+  column-gap: 20px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 20px;
+  z-index: 10;
+
+  background-color: $background-nigth;
+  border-radius: 20px;
+
+  & p {
+    font-size: 20px;
+    cursor: pointer;
+    color: $color-main-text;
+  }
+}
+
+.wrapperCountry {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.search {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.country {
+  background-color: $background-nigth;
+  color: $color-main-text;
+  padding: 0px 15px;
+
+  border-radius: 50px;
+}
+
+.filterDrop {
+  position: relative;
+}
+
+.heroDrop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: auto;
+  margin: 0 auto;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropMenu {
+  position: absolute;
+  background-color: $background-nigth;
+  z-index: 10;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 15px;
+}
+
+.itemDrop {
+  color: $color-main-text;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.buttonActive {
+  @extend %button-dark-blue-hover;
+}
+
+.hiddeFilter {
+  @extend %button-dark-blue-hover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+
+  border-radius: 20px 0 0 20px;
+  padding: 20px 10px;
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 200vh;
+  height: 100vh;
+
+  z-index: 0;
+}
+
+.windowRating {
+  position: relative;
+  color: black;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.windowYears {
+  position: absolute;
+  top: 0;
+
+  background-color: $background-nigth;
+  color: $color-main-text;
+
+  display: flex;
+  flex-flow: column nowrap;
+  column-gap: 5px;
+
+  max-width: 20vh;
+  max-height: 20vh;
+  font-size: 25px;
+  overflow-y: scroll;
+
+  padding: 10px;
+
+  border-radius: 20px;
+
+  z-index: 10;
+}
+
+.windowYears span {
+  cursor: pointer;
+}
+
+.filterFromBefore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  width: 100%;
+}

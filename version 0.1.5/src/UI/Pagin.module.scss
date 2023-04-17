@@ -1,0 +1,21 @@
+@import "./../data/varsGlobal/var.scss";
+.pagin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter {
+  background-color: $button-activective;
+  color: $color-main-text;
+  font-size: 24px;
+  margin: 10px 0;
+
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.buttonActive {
+  @extend %button-dark-blue-hover;
+}

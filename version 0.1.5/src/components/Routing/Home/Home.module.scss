@@ -1,0 +1,71 @@
+@import "./../../../data/varsGlobal/var.scss";
+
+.home {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  &__heroBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 30px;
+    background-color: $background-nigth-ligth;
+  }
+}
+
+.showFilter {
+  position: fixed;
+  left: 10px;
+
+  background-color: $button-activective;
+  border-radius: 20px;
+
+  font-size: 25px;
+  padding: 10px 20px;
+
+  cursor: pointer;
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+@include desktop {
+}
+@include laptop {
+  .home {
+    &__premier {
+      text-align: center;
+    }
+  }
+}
+@include tablet {
+  .home {
+    &__premier {
+      font-size: 20px;
+    }
+    &__heroContent {
+      font-size: 20px;
+    }
+  }
+}
+@include mobile {
+  .showFilter {
+    bottom: 20px;
+    z-index: 101;
+  }
+}
+@include mini-mobile {
+}
